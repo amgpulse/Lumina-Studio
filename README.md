@@ -1,8 +1,6 @@
 # 📸 Lumina Studio — Professional WebGL Photo Editor
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/kheirparham-eng/Lumina-Studio/main/public/icon.png" width="96" alt="Lumina Studio Logo" />
-</p>
+
 
 <p align="center">
   <b>A high-performance, GPU-accelerated non-destructive photo studio built with React 19, TypeScript, custom GLSL Shaders, and Tailwind CSS.</b>
