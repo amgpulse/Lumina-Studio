@@ -22,8 +22,8 @@
   <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API">
     <img src="https://img.shields.io/badge/WebGL-2.0%20GLSL-990000?style=for-the-badge&logo=webgl" alt="WebGL GLSL" />
   </a>
-  <a href="LICENSE">
-    <img src="https://img.shields.io/badge/License-Apache%202.0-green.svg?style=for-the-badge" alt="License" />
+  <a href="LICENSE.txt">
+    <img src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" alt="MIT License" />
   </a>
 </p>
 
@@ -161,4 +161,4 @@ Includes authentic tonal profiles with a global **Preset Strength Blend Slider**
 
 ## 📜 License
 
-Distributed under the **Apache 2.0 License**. See [`LICENSE`](LICENSE) for details.
+Distributed under the **MIT License**. See [`LICENSE.txt`](LICENSE.txt) for details.
