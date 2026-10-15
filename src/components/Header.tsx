@@ -65,9 +65,8 @@ export const Header: React.FC<HeaderProps> = ({
       {/* App Branding & Open File */}
       <div className="flex items-center gap-2 sm:gap-3 shrink-0">
         <div className="flex items-center gap-2">
-          <div className="relative flex h-8 w-8 items-center justify-center rounded-2xl bg-gradient-to-tr from-fuchsia-600 via-purple-600 to-cyan-400 text-xs font-black text-white shadow-lg shadow-purple-500/30 border border-white/50 overflow-hidden shrink-0">
-            <span className="relative z-10 drop-shadow">Lr</span>
-            <div className="absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-white/40 to-transparent pointer-events-none" />
+          <div className="relative flex h-8 w-8 items-center justify-center rounded-xl overflow-hidden shrink-0 shadow-lg shadow-purple-500/30 border border-white/40">
+            <img src="./favicon.svg" alt="Lumina Studio Icon" className="h-full w-full object-cover" />
           </div>
           <div className="flex flex-col">
             <span className="font-black text-xs tracking-wider uppercase leading-none opacity-95">

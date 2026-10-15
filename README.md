@@ -1,6 +1,8 @@
-# 📸 Lumina Studio — Professional WebGL Photo Editor
+<p align="center">
+  <img src="./assets/logo.svg" width="140" height="140" alt="Lumina Studio Logo" />
+</p>
 
-
+<h1 align="center">Lumina Studio</h1>
 
 <p align="center">
   <b>A high-performance, GPU-accelerated non-destructive photo studio built with React 19, TypeScript, custom GLSL Shaders, and Tailwind CSS.</b>
