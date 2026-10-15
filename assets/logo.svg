@@ -1,152 +1,176 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
   <defs>
-    <!-- Background Outer Glass Gradient -->
-    <radialGradient id="glassBg" cx="30%" cy="20%" r="85%" fx="25%" fy="15%">
-      <stop offset="0%" stop-color="#2a1b4e" />
-      <stop offset="45%" stop-color="#140e2b" />
-      <stop offset="100%" stop-color="#080612" />
+    <!-- Deep background ambient glow -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="65%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#141624" />
+      <stop offset="100%" stop-color="#08090f" />
     </radialGradient>
 
-    <!-- Liquid Iridescent Ambient Glows -->
-    <radialGradient id="glowMagenta" cx="25%" cy="30%" r="55%">
-      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.8" />
-      <stop offset="60%" stop-color="#d946ef" stop-opacity="0.4" />
-      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+    <!-- Camera Outer Frame Vibrant Gradient -->
+    <linearGradient id="frameGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3d5af1" />
+      <stop offset="25%" stop-color="#22b2f6" />
+      <stop offset="45%" stop-color="#8038f5" />
+      <stop offset="70%" stop-color="#ea4492" />
+      <stop offset="90%" stop-color="#ff933b" />
+      <stop offset="100%" stop-color="#ffc83b" />
+    </linearGradient>
+
+    <!-- Sun / Moon Warm Gradient -->
+    <linearGradient id="sunGrad" x1="20%" y1="90%" x2="80%" y2="10%">
+      <stop offset="0%" stop-color="#f8a5c2" />
+      <stop offset="40%" stop-color="#fbc531" />
+      <stop offset="100%" stop-color="#fdf499" />
+    </linearGradient>
+
+    <!-- Left Foreground Mountain Bright Gradient -->
+    <linearGradient id="leftPeakGrad" x1="15%" y1="100%" x2="70%" y2="20%">
+      <stop offset="0%" stop-color="#4a69bd" />
+      <stop offset="45%" stop-color="#1e90ff" />
+      <stop offset="100%" stop-color="#70a1ff" />
+    </linearGradient>
+
+    <!-- Right Background Mountain Deep Gradient -->
+    <linearGradient id="rightPeakGrad" x1="10%" y1="10%" x2="90%" y2="90%">
+      <stop offset="0%" stop-color="#2f3542" />
+      <stop offset="35%" stop-color="#3742fa" />
+      <stop offset="100%" stop-color="#833471" />
+    </linearGradient>
+
+    <!-- Star Glow / Radiance Gradient -->
+    <radialGradient id="starGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="25%" stop-color="#fff5cc" />
+      <stop offset="65%" stop-color="#fbc531" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#fbc531" stop-opacity="0" />
     </radialGradient>
 
-    <radialGradient id="glowCyan" cx="75%" cy="75%" r="60%">
-      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8" />
-      <stop offset="50%" stop-color="#3b82f6" stop-opacity="0.35" />
-      <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
-    </radialGradient>
-
-    <radialGradient id="glowAmber" cx="80%" cy="20%" r="45%">
-      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.65" />
-      <stop offset="50%" stop-color="#f97316" stop-opacity="0.25" />
-      <stop offset="100%" stop-color="#ef4444" stop-opacity="0" />
-    </radialGradient>
-
-    <!-- Bezel Edge Stroke Gradient -->
-    <linearGradient id="bezelStroke" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
-      <stop offset="25%" stop-color="#e879f9" stop-opacity="0.6" />
-      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.4" />
-      <stop offset="75%" stop-color="#ffffff" stop-opacity="0.2" />
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.5" />
+    <!-- Star Solid Core Gradient -->
+    <linearGradient id="starCoreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#fff2a1" />
+      <stop offset="100%" stop-color="#f9ca24" />
     </linearGradient>
 
-    <!-- Glass Specular Curved Sheen -->
-    <linearGradient id="glassGloss" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.45" />
-      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.1" />
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
-    </linearGradient>
-
-    <!-- Aperture Blades Shading -->
-    <linearGradient id="bladeGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ec4899" />
-      <stop offset="100%" stop-color="#8b5cf6" />
-    </linearGradient>
-    <linearGradient id="bladeGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#8b5cf6" />
-      <stop offset="100%" stop-color="#3b82f6" />
-    </linearGradient>
-    <linearGradient id="bladeGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#3b82f6" />
-      <stop offset="100%" stop-color="#06b6d4" />
-    </linearGradient>
-    <linearGradient id="bladeGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#06b6d4" />
-      <stop offset="100%" stop-color="#10b981" />
-    </linearGradient>
-    <linearGradient id="bladeGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10b981" />
-      <stop offset="100%" stop-color="#fbbf24" />
-    </linearGradient>
-    <linearGradient id="bladeGrad6" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fbbf24" />
-      <stop offset="100%" stop-color="#f43f5e" />
-    </linearGradient>
-
-    <!-- Center Lens Core Gradient -->
-    <radialGradient id="lensCore" cx="40%" cy="35%" r="65%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
-      <stop offset="35%" stop-color="#d946ef" stop-opacity="0.8" />
-      <stop offset="70%" stop-color="#38bdf8" stop-opacity="0.6" />
-      <stop offset="100%" stop-color="#090514" stop-opacity="0.95" />
-    </radialGradient>
-
-    <!-- Filters for Glow and Depth -->
-    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="16" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    <!-- Soft Blur Filter for realistic lighting/blooms -->
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="16" />
     </filter>
 
-    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.6" />
+    <!-- Star Bloom Filter -->
+    <filter id="starBloom" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
     </filter>
-
-    <clipPath id="squircleClip">
-      <rect x="24" y="24" width="464" height="464" rx="108" ry="108" />
-    </clipPath>
   </defs>
 
-  <!-- Base Icon Squircle Shadow -->
-  <rect x="24" y="32" width="464" height="464" rx="108" ry="108" fill="#000000" opacity="0.6" filter="url(#dropShadow)" />
+  <!-- Canvas Background -->
+  <rect width="800" height="800" fill="url(#bgGlow)" />
 
-  <!-- Main Squircle Body (Clipped) -->
-  <g clip-path="url(#squircleClip)">
-    <!-- Deep Glass Background -->
-    <rect x="24" y="24" width="464" height="464" fill="url(#glassBg)" />
+  <!-- LOGO ICON GROUP (Centered and Scaled up) -->
+  <g transform="translate(400, 400) scale(1.4) translate(-547, -387)">
 
-    <!-- Iridescent Ambient Caustics -->
-    <rect x="24" y="24" width="464" height="464" fill="url(#glowMagenta)" />
-    <rect x="24" y="24" width="464" height="464" fill="url(#glowCyan)" />
-    <rect x="24" y="24" width="464" height="464" fill="url(#glowAmber)" />
+    <!-- Background Shadow Mask Behind Mountain Area -->
+    <path d="M 326 534 Q 442 422 444 420 Q 456 408 468 420 L 594 544 L 690 490 Q 700 484 708 492 L 734 518 C 734 540 710 574 656 574 L 350 574 Z"
+          fill="#0c0e17" opacity="0.6" />
 
-    <!-- Subtle Texture Grid Mesh -->
-    <g opacity="0.08" stroke="#ffffff" stroke-width="1">
-      <circle cx="256" cy="256" r="80" fill="none" />
-      <circle cx="256" cy="256" r="140" fill="none" />
-      <circle cx="256" cy="256" r="190" fill="none" />
-      <line x1="66" y1="256" x2="446" y2="256" />
-      <line x1="256" y1="66" x2="256" y2="446" />
-    </g>
+    <!-- 1. Right / Back Mountain Peak -->
+    <path d="M 510 470 
+             L 570 424 
+             C 580 416 594 416 604 424 
+             L 688 494 
+             C 696 500 690 514 680 514 
+             L 480 514 Z" 
+          fill="url(#rightPeakGrad)" />
 
-    <!-- Camera Lens / Lumina Aperture System -->
-    <g transform="translate(256, 256)" filter="url(#dropShadow)">
-      <!-- Outer Glass Bezel Ring -->
-      <circle cx="0" cy="0" r="135" fill="#0e0a22" fill-opacity="0.65" stroke="url(#bezelStroke)" stroke-width="3" />
-      <circle cx="0" cy="0" r="126" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1" stroke-dasharray="4 6" />
+    <!-- Back Mountain Soft Blend Falloff -->
+    <path d="M 570 424 
+             C 580 416 594 416 604 424 
+             L 670 478 
+             C 684 490 692 506 690 524 
+             C 684 554 650 576 610 576 
+             L 490 576 
+             L 570 424 Z" 
+          fill="url(#rightPeakGrad)" />
 
-      <!-- Rotating 6-Blade Aperture Iris -->
-      <!-- Blade 1 -->
-      <path d="M 0 -115 L 75 -65 L 42 20 L -30 -30 Z" fill="url(#bladeGrad1)" opacity="0.9" />
-      <!-- Blade 2 -->
-      <path d="M 75 -65 L 115 15 L 20 55 L 10 -25 Z" fill="url(#bladeGrad2)" opacity="0.9" />
-      <!-- Blade 3 -->
-      <path d="M 115 15 L 60 105 L -40 60 L 15 5 Z" fill="url(#bladeGrad3)" opacity="0.9" />
-      <!-- Blade 4 -->
-      <path d="M 60 105 L -55 110 L -45 15 L 10 25 Z" fill="url(#bladeGrad4)" opacity="0.9" />
-      <!-- Blade 5 -->
-      <path d="M -55 110 L -115 25 L -35 -40 L -15 20 Z" fill="url(#bladeGrad5)" opacity="0.9" />
-      <!-- Blade 6 -->
-      <path d="M -115 25 L -65 -85 L 25 -40 L -25 -5 Z" fill="url(#bladeGrad6)" opacity="0.9" />
+    <!-- 2. Left / Foreground Mountain Peak -->
+    <path d="M 326 536 
+             L 436 430 
+             C 445 421 460 421 469 430 
+             L 634 576 
+             C 610 576 348 576 326 536 Z" 
+          fill="url(#leftPeakGrad)" />
 
-      <!-- Inner Glow Ring -->
-      <circle cx="0" cy="0" r="62" fill="url(#lensCore)" stroke="rgba(255, 255, 255, 0.75)" stroke-width="2" />
-      <circle cx="0" cy="0" r="32" fill="#ffffff" fill-opacity="0.9" filter="url(#softGlow)" />
+    <!-- Mountain Highlight Surface Overlay -->
+    <path d="M 330 538 L 444 428 C 452 420 464 424 470 432 L 536 576 L 350 576 Z" 
+          fill="#38b6ff" opacity="0.3" filter="url(#softGlow)" />
 
-      <!-- Center Prismatic Lumina Sparkle -->
-      <polygon points="0,-28 7,-9 28,0 7,9 0,28 -7,9 -28,0 -7,-9" fill="#ffffff" />
-      <circle cx="-9" cy="-9" r="4.5" fill="#ffffff" opacity="0.9" />
-      <circle cx="12" cy="12" r="2.5" fill="#ffffff" opacity="0.75" />
-    </g>
+    <!-- 3. Glowing Sun / Inner Circle -->
+    <circle cx="452" cy="358" r="49" fill="url(#sunGrad)" />
+    <!-- Ambient Sun Glow -->
+    <circle cx="452" cy="358" r="49" fill="orange" opacity="0.15" filter="url(#softGlow)" />
 
-    <!-- Top Diagonal Glass Specular Curved Sheen -->
-    <path d="M 24 24 L 488 24 C 488 24 488 180 380 230 C 230 300 80 180 24 160 Z" fill="url(#glassGloss)" />
+    <!-- 4. Camera Body Frame Structure (Vibrant Ribbon) -->
+    <path d="
+      M 406 234 
+      L 432 234 
+      C 442 234 451 228 456 219 
+      L 462 208 
+      C 472 190 491 179 512 179 
+      L 588 179 
+      C 612 179 632 198 632 222 
+      L 632 266 
+      C 632 278 622 288 610 288 
+      L 456 288 
+      C 440 288 424 294 412 306 
+      C 400 318 394 334 394 350 
+      L 394 518 
+      C 394 532 406 544 420 544 
+      L 620 544 
+      C 658 544 688 514 688 476 
+      L 688 386 
+      C 688 372 700 360 714 360 
+      C 728 360 740 372 740 386 
+      L 740 476 
+      C 740 542 686 596 620 596 
+      L 420 596 
+      C 376 596 342 562 342 518 
+      L 342 350 
+      C 342 318 355 290 376 269 
+      C 385 260 395 253 406 248 
+      Z" 
+      fill="url(#frameGrad)" />
 
-    <!-- 1px Liquid Bevel Inner Border -->
-    <rect x="25" y="25" width="462" height="462" rx="107" ry="107" fill="none" stroke="url(#bezelStroke)" stroke-width="2" />
+    <!-- Subtle Rounded Volumetric Accent on Top-Left Frame -->
+    <path d="
+      M 436 181 
+      C 416 181 398 189 384 203 
+      C 362 225 342 258 342 300 
+      L 342 420 
+      C 342 420 300 330 380 230 
+      C 410 190 450 181 480 181 
+      Z" 
+      fill="url(#frameGrad)" opacity="0.3" />
+
+    <!-- 5. 4-Point Magic Sparkle / Star Elements -->
+    <!-- Broad background bloom behind the star -->
+    <circle cx="680" cy="318" r="80" fill="url(#starGlow)" />
+
+    <!-- Sharp, high-contrast 4-point Star -->
+    <path d="
+      M 680 236 
+      Q 680 302 752 318 
+      Q 680 334 680 400 
+      Q 680 334 608 318 
+      Q 680 302 680 236 Z" 
+      fill="url(#starCoreGrad)" 
+      filter="url(#starBloom)" />
+
+    <!-- Micro-flare center point in Star -->
+    <circle cx="680" cy="318" r="8" fill="#ffffff" />
   </g>
+
 </svg>
